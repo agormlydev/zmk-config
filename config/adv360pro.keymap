@@ -24,8 +24,8 @@
 
         default_layer {
             bindings = <
-                &kp CAPS  AS(N1)    AS(N2)    AS(N3)    AS(N4)     AS(N5) &none                                                            &mo 5 AS(N6) AS(N7)   AS(N8)   AS(N9)    AS(N0) &caps_word
-                AS(TAB)   AS(SQT)   AS(COMMA) AS(DOT)   AS(P)      AS(Y)  &none                                                            &none AS(F)  AS(G)    AS(C)    AS(R)     AS(L)  AS(EQUAL) 
+                &kp CAPS  AS(N1)    AS(N2)    AS(N3)    AS(N4)     AS(N5) LC(X)                                                            &mo 5 AS(N6) AS(N7)   AS(N8)   AS(N9)    AS(N0) &caps_word
+                AS(TAB)   AS(SQT)   AS(COMMA) AS(DOT)   AS(P)      AS(Y)  LC(C)                                                            LC(V) AS(F)  AS(G)    AS(C)    AS(R)     AS(L)  AS(EQUAL) 
                 AS(ESC)   AS(A)     AS(O)     AS(E)     AS(U)      AS(I)  &none                 &none     &none     &none    &none         &none AS(D)  AS(H)    AS(T)    AS(N)     AS(S)  &kp ENTER
                 AS(GRAVE) AS(SEMI)  AS(Q)     AS(J)     AS(K)      AS(X)                                  &none     &none                        AS(B)  AS(M)    AS(W)    AS(V)     AS(Z)  AS(MINUS)
                 &none     &mo 1     &kp LCTRL &kp LSHFT &kp LALT                &mt LCTRL SPACE &kp BSPC  &kp LGUI  &kp LGUI &kp DEL &mo 3              &kp RALT &kp RSFT &kp RCTRL &mo 2  &none
