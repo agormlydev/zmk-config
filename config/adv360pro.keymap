@@ -7,6 +7,12 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&msc {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <0>;
+    delay-ms = <0>;
+};
+
 / {
     behaviors {
         as: auto_shift {
