@@ -12,7 +12,7 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
+            tapping_term_ms = <107>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -24,11 +24,11 @@
 
         default_layer {
             bindings = <
-                &kp CAPS  AS(N1)    AS(N2)    AS(N3)    AS(N4)     AS(N5) &kp LC(X)                                                            &mo 5 AS(N6) AS(N7)   AS(N8)   AS(N9)    AS(N0) &caps_word
-                AS(TAB)   AS(SQT)   AS(COMMA) AS(DOT)   AS(P)      AS(Y)  &kp LC(C)                                                            &kp LC(V) AS(F)  AS(G)    AS(C)    AS(R)     AS(L)  AS(EQUAL) 
-                AS(ESC)   AS(A)     AS(O)     AS(E)     AS(U)      AS(I)  &none                 &none     &none     &none    &none         &none AS(D)  AS(H)    AS(T)    AS(N)     AS(S)  &kp ENTER
-                AS(GRAVE) AS(SEMI)  AS(Q)     AS(J)     AS(K)      AS(X)                                  &none     &none                        AS(B)  AS(M)    AS(W)    AS(V)     AS(Z)  AS(MINUS)
-                &none     &mo 1     &kp LCTRL &kp LSHFT &kp LALT                &mt LCTRL SPACE &kp BSPC  &kp LGUI  &kp LGUI &kp DEL &mo 3              &kp RALT &kp RSFT &kp RCTRL &mo 2  &none
+                &kp CAPS  AS(N1)    AS(N2)    AS(N3)    AS(N4)     AS(N5) &kp LC(X)                                                           &mo 5     AS(N6)   AS(N7)   AS(N8)   AS(N9)    AS(N0) &caps_word
+                AS(TAB)   AS(SQT)   AS(COMMA) AS(DOT)   AS(P)      AS(Y)  &kp LC(C)                                                           &kp LC(V) AS(F)    AS(G)    AS(C)    AS(R)     AS(L)  AS(EQUAL) 
+                AS(ESC)   AS(A)     AS(O)     AS(E)     AS(U)      AS(I)  &none                        &none     &none     &none    &none         &none     AS(D)    AS(H)    AS(T)    AS(N)     AS(S)  &kp ENTER
+                AS(GRAVE) AS(SEMI)  AS(Q)     AS(J)     AS(K)      AS(X)                                         &none     &none                            AS(B)    AS(M)    AS(W)    AS(V)     AS(Z)  AS(MINUS)
+                &none     &mo 1     &kp LCTRL &kp LSHFT &kp LALT                    &ht_tp LCTRL SPACE &kp BSPC  &kp LGUI  &kp LGUI &kp DEL &mo 3                    &kp RALT &kp RSFT &kp RCTRL &mo 2  &none
             >;
         };
         sym_fun {
@@ -62,7 +62,7 @@
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_X(-200) &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_X(600) &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
+                &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
