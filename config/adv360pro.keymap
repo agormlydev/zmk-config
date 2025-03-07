@@ -17,7 +17,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        ht_tp: auto_shift {
+        ht_tp: auto_ctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping_term_ms = <200>;
