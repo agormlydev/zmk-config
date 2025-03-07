@@ -34,6 +34,20 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        mmv_fast: custom_mmv_fast {
+            compatible = "zmk,behavior-mouse-move";
+            acceleration-exponent = <0>;
+            time-to-max-speed-ms = <0>;
+            delay-ms = <0>;
+            speed = <40>;  
+        };
+        mmv_slow: custom_mmv_slow {
+            compatible = "zmk,behavior-mouse-move";
+            acceleration-exponent = <0>;
+            time-to-max-speed-ms = <0>;
+            delay-ms = <0>;
+            speed = <10>; 
+        };
     };
 
     keymap {
@@ -70,7 +84,7 @@
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &mo 4 &trans
+                &trans &mmv_fast MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &mo 4 &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
@@ -79,7 +93,7 @@
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
+                &trans &mmv_slow MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
