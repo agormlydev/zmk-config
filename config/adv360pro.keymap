@@ -8,19 +8,19 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
-&mmv {
-    acceleration-exponent = <0>;
-    time-to-max-speed-ms = <0>;
-};
-&msc {
-    acceleration-exponent = <0>;
-    time-to-max-speed-ms = <0>;
-}
+// &mmv {
+//     acceleration-exponent = <0>;
+//     time-to-max-speed-ms = <0>;
+// };
+// &msc {
+//     acceleration-exponent = <0>;
+//     time-to-max-speed-ms = <0>;
+// }
 
-&mkp_input_listener {
-    input-processors = <&zip_xy_scaler 1 5>;
-    layers = <4>
-}
+// &mkp_input_listener {
+//     input-processors = <&zip_xy_scaler 1 5>;
+//     layers = <4>
+// }
 
 / {
     behaviors {
@@ -85,7 +85,7 @@
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc MOVE_X(-30) &msc MOVE_Y(-30) &msc MOVE_Y(30) &msc MOVE_X(30) &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_X(-1200) &mmv MOVE_Y(1200) &mmv MOVE_Y(-1200) &mmv MOVE_X(1200) &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
+                &trans &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
