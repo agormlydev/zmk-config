@@ -76,7 +76,7 @@
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc MOVE_X(-30) &msc MOVE_Y(-30) &msc MOVE_Y(30) &msc MOVE_X(30) &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_X(-1200) &mmv MOVE_Y(1200) &mmv MOVE_Y(-1200) &mmv MOVE_X(1200) &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &mo 4 &trans
+                &trans &mmv MOVE_X(-1200) &mmv MOVE_Y(1200) &mmv MOVE_Y(-1200) &mmv MOVE_X(1200) &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &none &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
@@ -85,7 +85,7 @@
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc MOVE_X(-30) &msc MOVE_Y(-30) &msc MOVE_Y(30) &msc MOVE_X(30) &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
+                &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &trans &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
