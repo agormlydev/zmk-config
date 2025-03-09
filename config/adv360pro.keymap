@@ -15,16 +15,16 @@
 // &msc {
 //     acceleration-exponent = <0>;
 //     time-to-max-speed-ms = <0>;
-// }
+// };
 
 // &mkp_input_listener {
 //     input-processors = <&zip_xy_scaler 1 5>;
 //     layers = <4>
-// }
+// };
 
 &lt {
     tapping-term-ms = <200>;
-}
+};
 
 / {
     behaviors {
@@ -111,6 +111,6 @@
                 &trans &trans &trans &trans &trans &trans                       &trans  &trans                      &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans               &trans  &trans &trans  &trans &trans &trans               &trans &trans &trans &trans &trans
             >;
-        }
+        };
     };
 };
