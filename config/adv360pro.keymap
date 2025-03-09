@@ -24,7 +24,7 @@
 
 &lt {
     tapping-term-ms = <200>;
-};
+}
 
 / {
     behaviors {
