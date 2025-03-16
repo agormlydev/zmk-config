@@ -60,27 +60,27 @@
         };
         sym_fun {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans                                            &trans &kp F6 &kp F7   &kp F8   &kp F9   &kp F10  &kp F11
-                &trans &trans &trans &trans &trans &trans &trans                                            &trans &trans &trans   &trans   &trans   &trans   &kp F12
-                &trans &trans &trans &trans &trans &trans &trans        &trans &trans  &trans &trans        &trans &trans AS(LBKT) AS(RBKT) AS(FSLH) AS(BSLH) &trans
+                &trans &trans &trans &trans &trans &trans &trans                                             &trans &kp F6 &kp F7   &kp F8   &kp F9   &kp F10  &kp F11
+                &trans &trans &trans &trans &trans &trans &trans                                             &trans &trans &trans   &trans   &trans   &trans   &kp F12
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans  &trans &trans         &trans &trans AS(LBKT) AS(RBKT) AS(FSLH) AS(BSLH) &trans
                 &trans &trans &trans &trans &trans &trans                      &trans  &trans                      &trans &trans   &trans   &trans   &trans   &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans  &trans &trans &trans               &trans   &trans   &trans   &trans   &trans
+                &trans &trans &trans &trans &trans               &trans &trans &trans  &trans &kp DEL &trans              &trans   &trans   &trans   &trans   &trans
             >;
         };
         nav_fun {
             bindings = <
-                &trans &kp F1   &kp F2    &kp F3    &kp F4    &kp F5 &trans                                            &trans &trans &trans &trans &trans &trans &trans
-                &trans &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &trans                                            &trans &trans &trans &trans &trans &trans &trans
-                &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans        &trans &trans  &trans &trans        &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans   &trans    &trans    &trans    &trans                      &trans  &trans                      &trans &trans &trans &trans &trans &trans
-                &trans &trans   &trans    &trans    &trans                  &trans &trans &trans  &trans &trans &trans               &trans &trans &trans &trans &trans
+                &trans &kp F1   &kp F2    &kp F3    &kp F4    &kp F5 &trans                                                 &trans &trans &trans &trans &trans &trans &trans
+                &trans &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &trans                                                 &trans &trans &trans &trans &trans &trans &trans
+                &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans           &trans   &trans  &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans   &trans    &trans    &trans    &trans                           &trans  &trans                      &trans &trans &trans &trans &trans &trans
+                &trans &trans   &trans    &trans    &trans                  &kp SPACE &kp BSPC &trans  &trans &trans &trans               &trans &trans &trans &trans &trans
             >;
         };
         mouse {
             bindings = <
                 &trans &trans         &trans         &trans       &trans          &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
                 &trans &msc MOVE_X(-30) &msc MOVE_Y(-30) &msc MOVE_Y(30) &msc MOVE_X(30) &trans &trans                                                  &trans &trans &trans   &trans   &trans    &trans &trans
-                &trans &mmv MOVE_X(-1400) &mmv MOVE_Y(1400) &mmv MOVE_Y(-1400) &mmv MOVE_X(1400) &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &none &trans
+                &trans &mmv MOVE_X(-1200) &mmv MOVE_Y(1200) &mmv MOVE_Y(-1200) &mmv MOVE_X(1200) &trans &trans           &trans    &trans  &trans &trans        &trans &trans &kp RALT &kp RSFT &kp RCTRL &none &trans
                 &trans &trans         &trans         &trans       &trans          &trans                            &trans  &trans                      &trans &trans   &trans   &trans    &trans &trans
                 &trans &trans         &trans         &trans       &trans                        &mkp LCLK &mkp RCLK &trans  &trans &trans &trans               &trans   &trans   &trans    &trans &trans
             >;
