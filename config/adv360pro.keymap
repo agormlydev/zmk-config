@@ -56,6 +56,12 @@
             bindings = <&mo 6>, <&kp UNDER>;
             mods = <(MOD_LSFT)>;
         };
+        minus_caps_word: minus_caps_lock_word {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp caps_word>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -66,7 +72,7 @@
                 &kp CAPS  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5 &none                                                                             &mo 5     &kp N6   &kp N7   &kp N8   &kp N9    &kp N0 &caps_word
                 &kp TAB   &kp SQT   &kp COMMA &kp DOT   &kp P      &kp Y  &kp LC(X)                                                                         &none     &kp F    &kp G    &kp C    &kp R     &kp L  &kp EQUAL 
                 &kp ESC   &kp A     &kp O     &kp E     &kp U      &kp I  &kp LC(C)                    &none         &none     &none    &none               &kp LC(V) &kp D    &kp H    &kp T    &kp N     &kp S  &kp ENTER
-                &kp GRAVE &kp SEMI  &kp Q     &kp J     &kp K      &kp X                                             &none     &none                                  &kp B    &kp M    &kp W    &kp V     &kp Z  &kp MINUS
+                &kp GRAVE &kp SEMI  &kp Q     &kp J     &kp K      &kp X                                             &none     &none                                  &kp B    &kp M    &kp W    &kp V     &kp Z  &minus_caps_word
                 &none     &mo 1     &kp LCTRL &kp LSHFT &kp LALT                    &ht_tp LCTRL SPACE &mo_6_under_l &kp LGUI  &kp LGUI &mo_6_under_r &mo 3                    &kp RALT &kp RSFT &kp RCTRL &mo 2  &none
             >;
         };
