@@ -59,7 +59,7 @@
         minus_caps_word: minus_caps_lock_word {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <caps_word>;
+            bindings = <&kp MINUS>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
     };
